@@ -1,180 +1,642 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serpent Escape | Live Python Rental & Experiences</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Exotic Serpent Rentals | Escape Room & Event Live Experiences</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .heading-font { font-family: 'Cinzel', serif; }
+    </style>
 </head>
-<body>
+<body class="bg-zinc-950 text-zinc-100 antialiased selection:bg-amber-500 selection:text-black">
 
-    <header>
-        <div>
-            <div>
-                <span>🐍</span>
-                <span>SERPENT ESCAPE</span>
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-zinc-950/80 border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <span class="text-3xl">🐍</span>
+                <span class="heading-font text-xl font-bold tracking-wider text-amber-500">SERPENT ESCAPE</span>
             </div>
-            <nav>
-                <a href="#morphs">Our Pythons</a>
-                <a href="#packages">Escape Packages</a>
-                <a href="#safety">Safety &amp; Welfare</a>
-                <a href="#contact">Bookings</a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-zinc-400">
+                <a href="#morphs" class="hover:text-amber-400 transition">Our Pythons</a>
+                <a href="#packages" class="hover:text-amber-400 transition">Escape Packages</a>
+                <a href="#safety" class="hover:text-amber-400 transition">Safety & Welfare</a>
+                <a href="#contact" class="hover:text-amber-400 transition">Bookings</a>
             </nav>
-            <a href="#contact">Request Booking</a>
+            <a href="#contact" class="bg-amber-500 hover:bg-amber-400 text-black font-semibold px-5 py-2.5 rounded-lg text-sm transition shadow-lg shadow-amber-500/10">
+                Request Booking
+            </a>
         </div>
     </header>
 
-    <section>
-        <div>
-            <span>🎃 Halloween &amp; Escape Room Live Enhancements</span>
-            <h1>Unleash True Immersion with <span>Live Pythons</span></h1>
-            <p>
+    <!-- Hero Section -->
+    <section class="relative py-24 md:py-32 overflow-hidden border-b border-zinc-900">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-950/20 via-zinc-950 to-zinc-950 -z-10"></div>
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <span class="inline-block bg-amber-500/10 text-amber-400 border border-amber-500/20 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-widest mb-6">
+                🎃 Halloween & Escape Room Live Enhancements
+            </span>
+            <h1 class="heading-font text-4xl md:text-7xl font-extrabold tracking-tight max-w-4xl mx-auto leading-tight mb-8">
+                Unleash True Immersion with <span class="text-amber-500">Live Pythons</span>
+            </h1>
+            <p class="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto mb-10">
                 Elevate your escape rooms, haunted attractions, and venue photo-ops with our stunning, docile, non-venomous Ball Pythons. Turnkey climate setup and 100% professional handler supervision included.
             </p>
-            <div>
-                <a href="#packages">Explore Rental Packages</a>
-                <a href="#morphs">Meet The Snakes</a>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#packages" class="bg-amber-500 hover:bg-amber-400 text-black font-bold px-8 py-4 rounded-xl text-base transition">
+                    Explore Rental Packages
+                </a>
+                <a href="#morphs" class="bg-zinc-900 hover:bg-zinc-800 text-zinc-200 border border-zinc-800 font-semibold px-8 py-4 rounded-xl text-base transition">
+                    Meet The Snakes
+                </a>
             </div>
         </div>
     </section>
 
-    <section id="morphs">
-        <div>
-            <h2>Meet Our Docile Star Serpents</h2>
-            <p>Hand-raised, incredibly calm, and completely non-venomous Ball Pythons (<em>Python regius</em>). Each brings a unique aesthetic to your venue theme.</p>
+    <!-- Morphs Section -->
+    <section id="morphs" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="heading-font text-3xl md:text-4xl font-bold mb-4">Meet Our Docile Star Serpents</h2>
+            <p class="text-zinc-400">Hand-raised, incredibly calm, and completely non-venomous Ball Pythons (*Python regius*). Each brings a unique aesthetic to your venue theme.</p>
         </div>
-        <div>
-            <div>
-                <img src="snake-pics/classic.jpg" alt="Standard Classic Ball Python">
-                <h3>Standard Classic</h3>
-                <p>Rich chocolate-brown and black backdrop overlaid with golden-tan saddle blotches.</p>
-                <span>Best for: Ancient Tombs &amp; Gothic Sets</span>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6 hover:border-amber-500/50 transition">
+                <img src="Snake pics/photo_2026-10-15_16-10-11.jpg" alt="Standard Classic Ball Python" class="w-full h-32 object-cover rounded-md mb-4">
+                <h3 class="heading-font text-xl font-bold text-amber-400 mb-2">Standard Classic</h3>
+                <p class="text-sm text-zinc-400 mb-4">Rich chocolate-brown and black backdrop overlaid with golden-tan saddle blotches.</p>
+                <span class="text-xs bg-zinc-800 text-zinc-300 px-3 py-1 rounded-md">Best for: Ancient Tombs & Gothic Sets</span>
             </div>
-            
-            <div>
-                <img src="snake-pics/pastel.jpg" alt="Pastel Enchi Ball Python">
-                <h3>Pastel / Enchi</h3>
-                <p>Vibrant yellow-gold coloration with high-contrast patterning and bright eyes.</p>
-                <span>Best for: Mythic &amp; Alchemical Rooms</span>
+            <!-- Card 2 -->
+            <div class="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6 hover:border-amber-500/50 transition">
+                <img src="Snake pics/photo_2026-10-15_16-10-12.jpg" alt="Pastel Enchi Ball Python" class="w-full h-32 object-cover rounded-md mb-4">
+                <h3 class="heading-font text-xl font-bold text-amber-400 mb-2">Pastel / Enchi</h3>
+                <p class="text-sm text-zinc-400 mb-4">Vibrant yellow-gold coloration with high-contrast patterning and bright eyes.</p>
+                <span class="text-xs bg-zinc-800 text-zinc-300 px-3 py-1 rounded-md">Best for: Mythic & Alchemical Rooms</span>
             </div>
-            
-            <div>
-                <img src="snake-pics/banana.jpg" alt="Banana Coral Glow Ball Python">
-                <h3>Banana / Coral Glow</h3>
-                <p>Striking bright banana-yellow base scales with soft lavender blushing and dark freckles.</p>
-                <span>Best for: Premium Lobby Photo-Ops</span>
+            <!-- Card 3 -->
+            <div class="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6 hover:border-amber-500/50 transition">
+                <img src="Snake pics/photo_2026-10-15_16-10-13.jpg" alt="Banana Coral Glow Ball Python" class="w-full h-32 object-cover rounded-md mb-4">
+                <h3 class="heading-font text-xl font-bold text-amber-400 mb-2">Banana / Coral Glow</h3>
+                <p class="text-sm text-zinc-400 mb-4">Striking bright banana-yellow base scales with soft lavender blushing and dark freckles.</p>
+                <span class="text-xs bg-zinc-800 text-zinc-300 px-3 py-1 rounded-md">Best for: Premium Lobby Photo-Ops</span>
             </div>
         </div>
     </section>
 
-    <section id="packages">
-        <div>
-            <div>
-                <h2>Halloween Special Rental Packages</h2>
-                <p>Fully managed, turnkey experiences designed for zero staff hassle and maximum player engagement.</p>
+    <!-- Packages Section -->
+    <section id="packages" class="py-24 bg-zinc-900/30 border-y border-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold mb-4">Halloween Special Rental Packages</h2>
+                <p class="text-zinc-400">Fully managed, turnkey experiences designed for zero staff hassle and maximum player engagement.</p>
             </div>
-            <div>
-                <div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Package 1 -->
+                <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 flex flex-col justify-between">
                     <div>
-                        <h3>Haunted Room Live Feature</h3>
-                        <p>$150 - $350 <span>/ session</span></p>
-                        <p>Live python integrated directly into a key room puzzle or reveal sequence inside a stealth climate-controlled habitat.</p>
-                        <ul>
-                            <li>✓ Stealth habitat &amp; warm LED setup</li>
+                        <h3 class="heading-font text-xl font-bold mb-2">Haunted Room Live Feature</h3>
+                        <p class="text-amber-500 text-2xl font-bold mb-4">$150 - $350 <span class="text-xs text-zinc-400 font-normal">/ session</span></p>
+                        <p class="text-sm text-zinc-400 mb-6">Live python integrated directly into a key room puzzle or reveal sequence inside a stealth climate-controlled habitat.</p>
+                        <ul class="space-y-3 text-sm text-zinc-300 mb-8">
+                            <li>✓ Stealth habitat & warm LED setup</li>
                             <li>✓ On-site or off-camera monitor handler</li>
                             <li>✓ Zero residue on your set design</li>
                         </ul>
                     </div>
-                    <a href="#contact">Select Package</a>
+                    <a href="#contact" class="block text-center bg-zinc-800 hover:bg-amber-500 hover:text-black font-semibold py-3 rounded-xl transition">Select Package</a>
                 </div>
-                
-                <div>
-                    <div>Most Popular</div>
+                <!-- Package 2 -->
+                <div class="bg-zinc-900 border border-amber-500/50 rounded-2xl p-8 flex flex-col justify-between relative shadow-xl shadow-amber-500/5">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-500 text-black text-xs font-bold px-3 py-1 rounded-full uppercase">Most Popular</div>
                     <div>
-                        <h3>Lobby Meet &amp; Greet</h3>
-                        <p>$100 - $200 <span>/ hour</span></p>
-                        <p>Positioned in your reception area for players to hold and pose before or after their game session.</p>
-                        <ul>
+                        <h3 class="heading-font text-xl font-bold mb-2">Lobby Meet & Greet</h3>
+                        <p class="text-amber-500 text-2xl font-bold mb-4">$100 - $200 <span class="text-xs text-zinc-400 font-normal">/ hour</span></p>
+                        <p class="text-sm text-zinc-400 mb-6">Positioned in your reception area for players to hold and pose before or after their game session.</p>
+                        <ul class="space-y-3 text-sm text-zinc-300 mb-8">
                             <li>✓ Dedicated professional handler</li>
                             <li>✓ Viral social media photo magnet</li>
                             <li>✓ Guided handling for all guests</li>
                         </ul>
                     </div>
-                    <a href="#contact">Select Package</a>
+                    <a href="#contact" class="block text-center bg-amber-500 hover:bg-amber-400 text-black font-bold py-3 rounded-xl transition">Select Package</a>
                 </div>
-                
-                <div>
+                <!-- Package 3 -->
+                <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 flex flex-col justify-between">
                     <div>
-                        <h3>VIP Actor Companion</h3>
-                        <p>$250 - $450 <span>/ event</span></p>
-                        <p>Snake paired directly with your live actor (Alchemist, High Priestess) as a head-turning prop companion.</p>
-                        <ul>
+                        <h3 class="heading-font text-xl font-bold mb-2">VIP Actor Companion</h3>
+                        <p class="text-amber-500 text-2xl font-bold mb-4">$250 - $450 <span class="text-xs text-zinc-400 font-normal">/ event</span></p>
+                        <p class="text-sm text-zinc-400 mb-6">Snake paired directly with your live actor (Alchemist, High Priestess) as a head-turning prop companion.</p>
+                        <ul class="space-y-3 text-sm text-zinc-300 mb-8">
                             <li>✓ Actor handling orientation</li>
                             <li>✓ Strict rest rotation schedules</li>
                             <li>✓ Full handler supervision</li>
                         </ul>
                     </div>
-                    <a href="#contact">Select Package</a>
+                    <a href="#contact" class="block text-center bg-zinc-800 hover:bg-amber-500 hover:text-black font-semibold py-3 rounded-xl transition">Select Package</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="safety">
-        <div>
+    <!-- Safety Section -->
+    <section id="safety" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
             <div>
-                <h2>Zero Stress. Total Safety. Full Compliance.</h2>
-                <p>We prioritize animal welfare and venue safety above all else. Every rental includes our strict operational safeguards:</p>
-                <ul>
-                    <li>
-                        <span>✓</span>
+                <h2 class="heading-font text-3xl md:text-4xl font-bold mb-6">Zero Stress. Total Safety. Full Compliance.</h2>
+                <p class="text-zinc-400 mb-6">We prioritize animal welfare and venue safety above all else. Every rental includes our strict operational safeguards:</p>
+                <ul class="space-y-4 text-zinc-300">
+                    <li class="flex items-start space-x-3">
+                        <span class="text-amber-500 font-bold">✓</span>
                         <span><strong>100% On-Site Handler:</strong> A professional handler remains with the snake at all times. Guests are never left unsupervised.</span>
                     </li>
-                    <li>
-                        <span>✓</span>
+                    <li class="flex items-start space-x-3">
+                        <span class="text-amber-500 font-bold">✓</span>
                         <span><strong>Strict Rest Rotation:</strong> Animals work max 45 minutes followed by 15 minutes of quiet rest in temperature-regulated enclosures.</span>
                     </li>
-                    <li>
-                        <span>✓</span>
-                        <span><strong>Fully Insured &amp; Zero Residue:</strong> Comprehensive liability coverage and self-contained habitats that leave zero mark on your sets.</span>
+                    <li class="flex items-start space-x-3">
+                        <span class="text-amber-500 font-bold">✓</span>
+                        <span><strong>Fully Insured & Zero Residue:</strong> Comprehensive liability coverage and self-contained habitats that leave zero mark on your sets.</span>
                     </li>
                 </ul>
             </div>
-            <div>
-                <h3>Ready to Transform Your Attraction?</h3>
-                <p>We are currently booking Halloween slots for escape rooms and event venues in Bchamoun and surrounding areas.</p>
-                <div>
-                    <div>
-                        <span>Service Area</span>
-                        <span>Bchamoun &amp; Greater Region</span>
+            <div class="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl">
+                <h3 class="heading-font text-xl font-bold mb-4 text-amber-400">Ready to Transform Your Attraction?</h3>
+                <p class="text-sm text-zinc-400 mb-6">We are currently booking Halloween slots for escape rooms and event venues in Bchamoun and surrounding areas.</p>
+                <div class="space-y-4 text-sm">
+                    <div class="flex justify-between border-b border-zinc-800 pb-3">
+                        <span class="text-zinc-400">Service Area</span>
+                        <span class="font-medium">Bchamoun & Greater Region</span>
                     </div>
-                    <div>
-                        <span>Response Time</span>
-                        <span>Within 2 Hours</span>
+                    <div class="flex justify-between border-b border-zinc-800 pb-3">
+                        <span class="text-zinc-400">Response Time</span>
+                        <span class="font-medium">Within 2 Hours</span>
                     </div>
-                    <div>
-                        <span>Inquiries</span>
-                        <span>Ready for Halloween Bookings</span>
+                    <div class="flex justify-between pb-3">
+                        <span class="text-zinc-400">Inquiries</span>
+                        <span class="font-medium text-amber-500">Ready for Halloween Bookings</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <div>
-            <h2>Secure Your Halloween Dates</h2>
-            <p>Reach out directly to discuss custom escape room integrations or lock in your venue package.</p>
-            <div>
-                <a href="mailto:booking@serpentscape.com">Email Us for Booking</a>
-                <a href="https://wa.me/03448588" target="_blank">WhatsApp Direct Inquiry</a>
+    <!-- Contact / Booking Section -->
+    <section id="contact" class="py-24 bg-zinc-900/50 border-t border-zinc-900">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="heading-font text-3xl md:text-4xl font-bold mb-4">Secure Your Halloween Dates</h2>
+            <p class="text-zinc-400 mb-8">Reach out directly to discuss custom escape room integrations or lock in your venue package.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="mailto:booking@serpentscape.com" class="bg-amber-500 hover:bg-amber-400 text-black font-bold px-8 py-4 rounded-xl transition">
+                    Email Us for Booking
+                </a>
+                <a href="https://wa.me/03448588" target="_blank" class="bg-zinc-800 hover:bg-zinc-700 text-zinc-100 font-semibold px-8 py-4 rounded-xl transition">
+                    WhatsApp Direct Inquiry
+                </a>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>© 2026 Serpent Escape &amp; Live Experiences. All rights reserved. Non-venomous captive-bred Ball Pythons.</p>
+    <!-- Footer -->
+    <footer class="py-12 border-t border-zinc-950 text-center text-xs text-zinc-500">
+        <p>&copy; 2026 Serpent Escape & Live Experiences. All rights reserved. Non-venomous captive-bred Ball Pythons.</p>
     </footer>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Serpent Escape: Premium Ball Python rentals for escape rooms, haunted attractions, and venue photo-ops. Docile, non-venomous snakes with professional handler supervision. Book your Halloween experience today!">
+    <meta name="keywords" content="ball python rental, escape room snakes, haunted attraction animals, venue photo snake, exotic pet rental, serpent escape">
+    <meta name="author" content="Serpent Escape">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exotic Serpent Rentals | Escape Room & Event Live Experiences</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f0f1a;
+            --bg-subtle: #1a1a24;
+            --fg: #f0f0f5;
+            --muted: #737383;
+            --accent: #f59e0b;
+            --accent-soft: #f59e0b30;
+            --card: #2a2a3a;
+            --border: #404050;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg);
+            color: var(--fg);
+            overflow-x: hidden;
+        }
+
+        .heading-font {
+            font-family: 'Cinzel', serif;
+        }
+
+        /* Reduced motion preference */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Subtle gradient animation for hero */
+        @keyframes gradient-shift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        /* Pulse effect for accent elements */
+        @keyframes pulse-soft {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        /* Stagger entrance animation */
+        @keyframes fade-slide-up {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-subtle);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent);
+        }
+
+        /* Focus states for accessibility */
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        /* Reduced motion class */
+        .no-animation {
+            animation: none !important;
+            transition: none !important;
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background-color: transparent !important;
+                color: black !important;
+            }
+
+            *,
+            *::before,
+            *::after {
+                background-color: transparent !important;
+                color: black !important;
+                box-shadow: none !important;
+                text-shadow: none !important;
+            }
+
+            a,
+            a:visited {
+                text-decoration: underline;
+                color: black !important;
+            }
+
+            a[href::after] {
+                content: attr(href);
+            }
+
+            img {
+                max-width: 100%;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+        }
+    </style>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Ctext y='50' x='50' font-size='32' fill='%23f59e0b'%3E🐍%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' fill='%231f2937'/%3E%3Ctext y='130' x='90' font-size='72' fill='%23f59e0b'%3E🐍%3C/text%3E%3C/svg%3E">
+</style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 antialiased selection:bg-amber-500 selection:text-black">
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-zinc-950/80 border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <span class="text-3xl">🐍</span>
+                <span class="heading-font text-xl font-bold tracking-wider text-amber-500">SERPENT ESCAPE</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-zinc-400">
+                <a href="#morphs" class="hover:text-amber-400 transition">Our Pythons</a>
+                <a href="#packages" class="hover:text-amber-400 transition">Escape Packages</a>
+                <a href="#safety" class="hover:text-amber-400 transition">Safety & Welfare</a>
+                <a href="#contact" class="hover:text-amber-400 transition">Bookings</a>
+            </nav>
+            <a href="#contact" class="bg-amber-500 hover:bg-amber-400 text-black font-semibold px-5 py-2.5 rounded-lg text-sm transition shadow-lg shadow-amber-500/10">
+                Request Booking
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-24 md:py-32 overflow-hidden border-b border-zinc-900" style="background-size: 400% 400%; animation: gradient-shift 15s ease infinite;">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-950/20 via-zinc-950 to-zinc-950 -z-10"></div>
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <span class="inline-block bg-amber-500/10 text-amber-400 border border-amber-500/20 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-widest mb-6">
+                🎃 Halloween & Escape Room Live Enhancements
+            </span>
+            <h1 class="heading-font text-4xl md:text-7xl font-extrabold tracking-tight max-w-4xl mx-auto leading-tight mb-8">
+                Unleash True Immersion with <span class="text-amber-500">Live Pythons</span>
+            </h1>
+            <p class="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto mb-10">
+                Elevate your escape rooms, haunted attractions, and venue photo-ops with our stunning, docile, non-venomous Ball Pythons. Turnkey climate setup and 100% professional handler supervision included.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#packages" class="bg-amber-500 hover:bg-amber-400 text-black font-bold px-8 py-4 rounded-xl text-base transition">
+                    Explore Rental Packages
+                </a>
+                <a href="#morphs" class="bg-zinc-900 hover:bg-zinc-800 text-zinc-200 border border-zinc-800 font-semibold px-8 py-4 rounded-xl text-base transition">
+                    Meet The Snakes
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Morphs Section -->
+    <section id="morphs" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="heading-font text-3xl md:text-4xl font-bold mb-4">Meet Our Docile Star Serpents</h2>
+            <p class="text-zinc-400">Hand-raised, incredibly calm, and completely non-venomous Ball Pythons (*Python regius*). Each brings a unique aesthetic to your venue theme.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6 hover:border-amber-500/50 hover:shadow-xl hover:shadow-amber-500/20 transition-all duration-300">
+                <div class="text-4xl mb-4">🐍</div>
+                <h3 class="heading-font text-xl font-bold text-amber-400 mb-2">Standard Classic</h3>
+                <p class="text-sm text-zinc-400 mb-4">Rich chocolate-brown and black backdrop overlaid with golden-tan saddle blotches.</p>
+                <span class="text-xs bg-zinc-800 text-zinc-300 px-3 py-1 rounded-md">Best for: Ancient Tombs & Gothic Sets</span>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6 hover:border-amber-500/50 hover:shadow-xl hover:shadow-amber-500/20 transition-all duration-300">
+                <div class="text-4xl mb-4">✨</div>
+                <h3 class="heading-font text-xl font-bold text-amber-400 mb-2">Pastel / Enchi</h3>
+                <p class="text-sm text-zinc-400 mb-4">Vibrant yellow-gold coloration with high-contrast patterning and bright eyes.</p>
+                <span class="text-xs bg-zinc-800 text-zinc-300 px-3 py-1 rounded-md">Best for: Mythic & Alchemical Rooms</span>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6 hover:border-amber-500/50 hover:shadow-xl hover:shadow-amber-500/20 transition-all duration-300">
+                <div class="text-4xl mb-4">🌟</div>
+                <h3 class="heading-font text-xl font-bold text-amber-400 mb-2">Banana / Coral Glow</h3>
+                <p class="text-sm text-zinc-400 mb-4">Striking bright banana-yellow base scales with soft lavender blushing and dark freckles.</p>
+                <span class="text-xs bg-zinc-800 text-zinc-300 px-3 py-1 rounded-md">Best for: Premium Lobby Photo-Ops</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-24 bg-zinc-900/30 border-y border-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold mb-4">Halloween Special Rental Packages</h2>
+                <p class="text-zinc-400">Fully managed, turnkey experiences designed for zero staff hassle and maximum player engagement.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Package 1 -->
+                <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 flex flex-col justify-between hover:border-amber-500/50 hover:shadow-xl hover:shadow-amber-500/20 transition-all duration-300">
+                    <div>
+                        <h3 class="heading-font text-xl font-bold mb-2">Haunted Room Live Feature</h3>
+                        <p class="text-amber-500 text-2xl font-bold mb-4">$150 - $350 <span class="text-xs text-zinc-400 font-normal">/ session</span></p>
+                        <p class="text-sm text-zinc-400 mb-6">Live python integrated directly into a key room puzzle or reveal sequence inside a stealth climate-controlled habitat.</p>
+                        <ul class="space-y-3 text-sm text-zinc-300 mb-8">
+                            <li>✓ Stealth habitat & warm LED setup</li>
+                            <li>✓ On-site or off-camera monitor handler</li>
+                            <li>✓ Zero residue on your set design</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="block text-center bg-zinc-800 hover:bg-amber-500 hover:text-black font-semibold py-3 rounded-xl transition">Select Package</a>
+                </div>
+                <!-- Package 2 -->
+                <div class="bg-zinc-900 border border-amber-500/50 rounded-2xl p-8 flex flex-col justify-between relative shadow-xl shadow-amber-500/5 hover:shadow-2xl hover:shadow-amber-500/10 transition-all duration-300">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-500 text-black text-xs font-bold px-3 py-1 rounded-full uppercase animate-pulse-soft">Most Popular</div>
+                    <div>
+                        <h3 class="heading-font text-xl font-bold mb-2">Lobby Meet & Greet</h3>
+                        <p class="text-amber-500 text-2xl font-bold mb-4">$100 - $200 <span class="text-xs text-zinc-400 font-normal">/ hour</span></p>
+                        <p class="text-sm text-zinc-400 mb-6">Positioned in your reception area for players to hold and pose before or after their game session.</p>
+                        <ul class="space-y-3 text-sm text-zinc-300 mb-8">
+                            <li>✓ Dedicated professional handler</li>
+                            <li>✓ Viral social media photo magnet</li>
+                            <li>✓ Guided handling for all guests</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="block text-center bg-amber-500 hover:bg-amber-400 text-black font-bold py-3 rounded-xl transition">Select Package</a>
+                </div>
+                <!-- Package 3 -->
+                <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 flex flex-col justify-between hover:border-amber-500/50 hover:shadow-xl hover:shadow-amber-500/20 transition-all duration-300">
+                    <div>
+                        <h3 class="heading-font text-xl font-bold mb-2">VIP Actor Companion</h3>
+                        <p class="text-amber-500 text-2xl font-bold mb-4">$250 - $450 <span class="text-xs text-zinc-400 font-normal">/ event</span></p>
+                        <p class="text-sm text-zinc-400 mb-6">Snake paired directly with your live actor (Alchemist, High Priestess) as a head-turning prop companion.</p>
+                        <ul class="space-y-3 text-sm text-zinc-300 mb-8">
+                            <li>✓ Actor handling orientation</li>
+                            <li>✓ Strict rest rotation schedules</li>
+                            <li>✓ Full handler supervision</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="block text-center bg-zinc-800 hover:bg-amber-500 hover:text-black font-semibold py-3 rounded-xl transition">Select Package</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Section -->
+    <section id="safety" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="heading-font text-3xl md:text-4xl font-bold mb-6">Zero Stress. Total Safety. Full Compliance.</h2>
+                <p class="text-zinc-400 mb-6">We prioritize animal welfare and venue safety above all else. Every rental includes our strict operational safeguards:</p>
+                <ul class="space-y-4 text-zinc-300">
+                    <li class="flex items-start space-x-3">
+                        <span class="text-amber-500 font-bold">✓</span>
+                        <span><strong>100% On-Site Handler:</strong> A professional handler remains with the snake at all times. Guests are never left unsupervised.</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <span class="text-amber-500 font-bold">✓</span>
+                        <span><strong>Strict Rest Rotation:</strong> Animals work max 45 minutes followed by 15 minutes of quiet rest in temperature-regulated enclosures.</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <span class="text-amber-500 font-bold">✓</span>
+                        <span><strong>Fully Insured & Zero Residue:</strong> Comprehensive liability coverage and self-contained habitats that leave zero mark on your sets.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl">
+                <h3 class="heading-font text-xl font-bold mb-4 text-amber-400">Ready to Transform Your Attraction?</h3>
+                <p class="text-sm text-zinc-400 mb-6">We are currently booking Halloween slots for escape rooms and event venues in Bchamoun and surrounding areas.</p>
+                <div class="space-y-4 text-sm">
+                    <div class="flex justify-between border-b border-zinc-800 pb-3">
+                        <span class="text-zinc-400">Service Area</span>
+                        <span class="font-medium">Bchamoun & Greater Region</span>
+                    </div>
+                    <div class="flex justify-between border-b border-zinc-800 pb-3">
+                        <span class="text-zinc-400">Response Time</span>
+                        <span class="font-medium">Within 2 Hours</span>
+                    </div>
+                    <div class="flex justify-between pb-3">
+                        <span class="text-zinc-400">Inquiries</span>
+                        <span class="font-medium text-amber-500">Ready for Halloween Bookings</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Booking Section -->
+    <section id="contact" class="py-24 bg-zinc-900/50 border-t border-zinc-900">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="heading-font text-3xl md:text-4xl font-bold mb-4">Secure Your Halloween Dates</h2>
+            <p class="text-zinc-400 mb-8">Reach out directly to discuss custom escape room integrations or lock in your venue package.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="mailto:booking@serpentscape.com" class="bg-amber-500 hover:bg-amber-400 text-black font-bold px-8 py-4 rounded-xl transition">
+                    Email Us for Booking
+                </a>
+                <a href="https://wa.me/03448588" target="_blank" class="bg-zinc-800 hover:bg-zinc-700 text-zinc-100 font-semibold px-8 py-4 rounded-xl transition">
+                    WhatsApp Direct Inquiry
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-zinc-950 text-center text-xs text-zinc-500">
+        <p>&copy; 2026 Serpent Escape & Live Experiences. All rights reserved. Non-venomous captive-bred Ball Pythons.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-6 right-6 w-10 h-10 bg-amber-500/10 text-amber-400 border border-amber-500/50 rounded-full hover:bg-amber-500 hover:text-black hover:shadow-lg transition-all duration-300 flex items-center justify-center opacity-0 invisible transition-all duration-300 z-50" aria-label="Back to top">
+        <span class="text-2xl">↑</span>
+    </button>
+
+    <script>
+        // Back to top functionality
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.remove('opacity-0', 'invisible');
+                backToTop.classList.add('opacity-100', 'visible');
+            } else {
+                backToTop.classList.add('opacity-0', 'invisible');
+                backToTop.classList.remove('opacity-100', 'visible');
+            }
+        });
+        
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'
+            });
+        });
+    </script>
+
+    <!-- Smooth scroll for anchor links -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    e.preventDefault();
+                    
+                    const startY = window.pageYOffset;
+                    const endY = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                    const duration = 800;
+                    const startTime = performance.now();
+                    
+                    function scrollAnimation(currentTime) {
+                        const elapsed = currentTime - startTime;
+                        const progress = Math.min(elapsed / duration, 1);
+                        const easeOut = 1 - Math.pow(1 - progress, 3);
+                        window.scrollTo(0, startY + (endY - startY) * easeOut);
+                        
+                        if (progress < 1) {
+                            requestAnimationFrame(scrollAnimation);
+                        }
+                    }
+                    
+                    // Respect reduced motion preference
+                    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                        requestAnimationFrame(scrollAnimation);
+                    } else {
+                        window.scrollTo(0, endY);
+                    }
+                }
+            });
+        });
+    </script>
+
+    <!-- Preloader hide on load -->
+    <script>
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader');
+            if (preloader) {
+                // Respect reduced motion preference
+                if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                    preloader.style.opacity = '0';
+                    preloader.style.visibility = 'hidden';
+                } else {
+                    preloader.style.transition = 'opacity 0.5s ease, visibility 0.5s ease';
+                    preloader.style.opacity = '0';
+                    setTimeout(() => {
+                        preloader.style.visibility = 'hidden';
+                    }, 500);
+                }
+            }
+        });
+    </script>
+
+</body>
+>>>>>>> 9d0af5b (Polish: Add SEO, animations, accessibility and production improvements)
 </html>
