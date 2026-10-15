@@ -138,7 +138,18 @@
                 display: none !important;
             }
         }
-    </style>
+    
+/* Tab Styles */
+.tab-btn {
+    transition: all 0.2s;
+}
+.tab-btn.active {
+    color: #f59e0b;
+    border-bottom-color: #f59e0b;
+}
+.tab-content.active {
+    display: grid;
+}</style>
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Ctext y='50' x='50' font-size='32' fill='%23f59e0b'%3E🐍%3C/text%3E%3C/svg%3E">
     <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' fill='%231f2937'/%3E%3Ctext y='130' x='90' font-size='72' fill='%23f59e0b'%3E🐍%3C/text%3E%3C/svg%3E">
@@ -221,7 +232,69 @@
                 <span class="text-xs bg-zinc-800 text-zinc-300 px-3 py-1 rounded-md">Best for: Premium Lobby Photo-Ops</span>
             </div>
         </div>
-    </section>
+    </section><!-- Buy/Rent Section -->
+<section id="buy-rent" class="py-24 max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="heading-font text-3xl md:text-4xl font-bold mb-4">Buy or Rent Our Pythons</h2>
+        <p class="text-zinc-400">Choose from our available Ball Pythons for purchase or rental.</p>
+    </div>
+
+    <!-- Tabs -->
+    <div class="flex mb-8 border-b border-zinc-800">
+        <button id="buy-tab" class="tab-btn active px-6 py-3 text-zinc-400 hover:text-zinc-200 border-b-2 border-transparent hover:border-amber-500 transition">Buy</button>
+        <button id="rent-tab" class="tab-btn px-6 py-3 text-zinc-400 hover:text-zinc-200 border-b-2 border-transparent hover:border-amber-500 transition">Rent</button>
+    </div>
+
+    <!-- Tab Content -->
+    <div id="buy-content" class="tab-content active grid md:grid-cols-2 gap-8">
+        <!-- Buy Items -->
+        <div class="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6 hover:border-amber-500/50 hover:shadow-xl hover:shadow-amber-500/20 transition-all duration-300">
+            <div class="text-4xl mb-4">🐍</div>
+            <h3 class="heading-font text-xl font-bold text-amber-400 mb-2">Standard Classic</h3>
+            <p class="text-sm text-zinc-400 mb-4">Rich chocolate-brown and black backdrop overlaid with golden-tan saddle blotches.</p>
+            <p class="text-lg font-bold text-amber-500 mb-2">$150.00</p>
+            <span class="text-xs bg-zinc-800 text-zinc-300 px-3 py-1 rounded-md">Available for Purchase</span>
+        </div>
+        <div class="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6 hover:border-amber-500/50 hover:shadow-xl hover:shadow-amber-500/20 transition-all duration-300">
+            <div class="text-4xl mb-4">✨</div>
+            <h3 class="heading-font text-xl font-bold text-amber-400 mb-2">Pastel / Enchi</h3>
+            <p class="text-sm text-zinc-400 mb-4">Vibrant yellow-gold coloration with high-contrast patterning and bright eyes.</p>
+            <p class="text-lg font-bold text-amber-500 mb-2">$200.00</p>
+            <span class="text-xs bg-zinc-800 text-zinc-300 px-3 py-1 rounded-md">Available for Purchase</span>
+        </div>
+        <div class="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6 hover:border-amber-500/50 hover:shadow-xl hover:shadow-amber-500/20 transition-all duration-300">
+            <div class="text-4xl mb-4">🌟</div>
+            <h3 class="heading-font text-xl font-bold text-amber-400 mb-2">Banana / Coral Glow</h3>
+            <p class="text-sm text-zinc-400 mb-4">Striking bright banana-yellow base scales with soft lavender blushing and dark freckles.</p>
+            <p class="text-lg font-bold text-amber-500 mb-2">$250.00</p>
+            <span class="text-xs bg-zinc-800 text-zinc-300 px-3 py-1 rounded-md">Available for Purchase</span>
+        </div>
+    </div>
+    <div id="rent-content" class="tab-content grid md:grid-cols-2 gap-8 hidden">
+        <!-- Rent Items -->
+        <div class="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6 hover:border-amber-500/50 hover:shadow-xl hover:shadow-amber-500/20 transition-all duration-300">
+            <div class="text-4xl mb-4">🐍</div>
+            <h3 class="heading-font text-xl font-bold text-amber-400 mb-2">Standard Classic</h3>
+            <p class="text-sm text-zinc-400 mb-4">Rich chocolate-brown and black backdrop overlaid with golden-tan saddle blotches.</p>
+            <p class="text-lg font-bold text-amber-500 mb-2">$50.00 / day</p>
+            <span class="text-xs bg-zinc-800 text-zinc-300 px-3 py-1 rounded-md">Available for Rent</span>
+        </div>
+        <div class="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6 hover:border-amber-500/50 hover:shadow-xl hover:shadow-amber-500/20 transition-all duration-300">
+            <div class="text-4xl mb-4">✨</div>
+            <h3 class="heading-font text-xl font-bold text-amber-400 mb-2">Pastel / Enchi</h3>
+            <p class="text-sm text-zinc-400 mb-4">Vibrant yellow-gold coloration with high-contrast patterning and bright eyes.</p>
+            <p class="text-lg font-bold text-amber-500 mb-2">$75.00 / day</p>
+            <span class="text-xs bg-zinc-800 text-zinc-300 px-3 py-1 rounded-md">Available for Rent</span>
+        </div>
+        <div class="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6 hover:border-amber-500/50 hover:shadow-xl hover:shadow-amber-500/20 transition-all duration-300">
+            <div class="text-4xl mb-4">🌟</div>
+            <h3 class="heading-font text-xl font-bold text-amber-400 mb-2">Banana / Coral Glow</h3>
+            <p class="text-sm text-zinc-400 mb-4">Striking bright banana-yellow base scales with soft lavender blushing and dark freckles.</p>
+            <p class="text-lg font-bold text-amber-500 mb-2">$100.00 / day</p>
+            <span class="text-xs bg-zinc-800 text-zinc-300 px-3 py-1 rounded-md">Available for Rent</span>
+        </div>
+    </div>
+</section>
 
     <!-- Packages Section -->
     <section id="packages" class="py-24 bg-zinc-900/30 border-y border-zinc-900">
@@ -425,5 +498,28 @@
             }
         });
     </script>
-</body>
+
+    <!-- Tab Switching Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buyTab = document.getElementById('buy-tab');
+            const rentTab = document.getElementById('rent-tab');
+            const buyContent = document.getElementById('buy-content');
+            const rentContent = document.getElementById('rent-content');
+
+            buyTab.addEventListener('click', function() {
+                buyTab.classList.add('active');
+                rentTab.classList.remove('active');
+                buyContent.classList.add('active');
+                rentContent.classList.remove('active');
+            });
+
+            rentTab.addEventListener('click', function() {
+                rentTab.classList.add('active');
+                buyTab.classList.remove('active');
+                rentContent.classList.add('active');
+                buyContent.classList.remove('active');
+            });
+        });
+    </script></body>
 </html>
