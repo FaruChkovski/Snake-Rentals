@@ -149,6 +149,14 @@
 }
 .tab-content.active {
     display: grid;
+}
+.serpent-logo {
+    display: inline-block;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
 }</style>
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Ctext y='50' x='50' font-size='32' fill='%23f59e0b'%3E🐍%3C/text%3E%3C/svg%3E">
@@ -164,7 +172,7 @@
     <header class="sticky top-0 z-50 backdrop-blur-md bg-zinc-950/80 border-b border-zinc-800">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <span class="text-3xl">🐍</span>
+                <span class="text-3xl serpent-logo">🐍</span>
                 <span class="heading-font text-xl font-bold tracking-wider text-amber-500">SERPENT ESCAPE</span>
             </div>
             <nav class="hidden md:flex space-x-8 text-sm font-medium text-zinc-400">
@@ -173,9 +181,6 @@
                 <a href="#safety" class="hover:text-amber-400 transition">Safety & Welfare</a>
                 <a href="#contact" class="hover:text-amber-400 transition">Bookings</a>
             </nav>
-            <a href="#contact" class="bg-amber-500 hover:bg-amber-400 text-black font-semibold px-5 py-2.5 rounded-lg text-sm transition shadow-lg shadow-amber-500/10">
-                Request Booking
-            </a>
         </div>
     </header>
 
